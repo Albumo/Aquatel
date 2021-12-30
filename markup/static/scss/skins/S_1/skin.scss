@@ -1,0 +1,236 @@
+body {
+    background-color: $primary-fill;
+    font-weight: $font-weight;
+    color: $primary-text;
+}
+
+html {
+    @include respond-from(to-sm) {
+        font-size: $font-size-xs;
+    }
+
+    font-size: $font-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 {
+    font-size: $font-size-h1;
+    font-weight: 500;
+    color: $primary-title;
+    margin: 0;
+
+    @include respond-from(sm) {
+        font-size: $font-size-h1-sm;
+        line-height: 1.2;
+    }
+
+    @include respond-from(lg) {
+        font-size: $font-size-h1-lg;
+    }
+}
+
+h2 {
+    font-size: $font-size-h2;
+    color: $primary-title;
+
+
+
+    @include respond-from(sm) {
+        font-size: $font-size-h2-sm;
+    }
+
+    @include respond-from(lg) {
+        font-size: $font-size-h2-lg;
+    }
+}
+
+h3 {
+    font-size: $font-size-h3;
+
+    @include respond-from(sm) {
+        font-size: $font-size-h3-sm;
+    }
+
+    @include respond-from(lg) {
+        font-size: $font-size-h3-lg;
+    }
+}
+
+p {
+    line-height: 1.2;
+}
+
+.w-center {
+    max-width: $page-width;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 $page-horizontal-gap;
+
+    @include respond-from(sm-md) {
+        padding: 0 $page-horizontal-gap-sm;
+    }
+
+    @include respond-from(md-xl) {
+        padding: 0 $page-horizontal-gap-md;
+    }
+}
+
+//gap
+
+.w-gap {
+    margin-top: 40px;
+}
+
+.w-gap-sm {
+    margin-top: 20px;
+
+    @include respond-from(md) {
+        margin-top: 25px;
+    }
+}
+
+.w-gap-md {
+    margin-top: 25px;
+
+    @include respond-from(md) {
+        margin-top: 30px;
+    }
+}
+
+.w-gap-lg {
+    margin-top: 40px;
+
+    @include respond-from(sm) {
+        margin-top: 80px;
+    }
+
+    @include respond-from(md) {
+        margin-top: 100px;
+    }
+}
+
+.w-gap-xl {
+    margin-top: 40px;
+
+    @include respond-from(sm) {
+        margin-top: 80px;
+    }
+
+    @include respond-from(md) {
+        margin-top: 150px;
+    }
+}
+
+.img-left-text, .img-right-text {
+
+    &__img {
+        margin: 0 auto 20px;
+        max-width: 400px;
+    }
+
+    @include respond-from(sm) {
+        &__img {
+            margin: 0 auto 60px;
+        }
+    }
+
+    @include respond-from(md) {
+        display: flex;
+        align-items: center;
+
+        &__img {
+            min-width: 300px;
+            margin: 0 40px 0 0;
+
+        }
+
+    }
+
+    @include respond-from(lg) {
+        justify-content: space-between;
+
+        &__img {
+            min-width: 450px;
+            max-width: 450px;
+            margin-right: 140px;
+        }
+    }
+
+}
+
+.txt-wrap {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img-right-text {
+    &__img {
+        margin: 20px auto 0;
+    }
+
+    @include respond-from(sm) {
+        &__img {
+            margin: 60px auto 0;
+        }
+    }
+
+    @include respond-from(md) {
+        display: flex;
+        align-items: center;
+
+        &__img {
+            margin: 0 0 0 40px;
+
+        }
+
+    }
+}
+
+.fixed-position {
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+
+    @include support(object-fit, cover) {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.colored {
+    color: #12E6D9;
+    font-weight: 600;
+}
+
+.empty-font {
+    font-weight: 900;
+    color: #161616;
+    text-shadow: -1px -1px 1px #12E6D9, 1px 1px 0px #12E6D9;
+
+}
+
+.w-list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+
+    ul li {
+        margin-bottom: 5px;
+    }
+
+    @include respond-from(sm) {
+        gap: 1rem 5rem;
+    }
+}

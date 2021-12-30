@@ -1,0 +1,19 @@
+.footer {
+    background: $footer-bg;
+
+    &__wrap {
+        padding: 20px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    &__mail, &__adress, &__phone {
+        color: #fff;
+        margin-top: 10px;
+        a {
+            color: #fff;
+        }
+    }
+
+}

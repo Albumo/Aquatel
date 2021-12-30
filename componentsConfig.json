@@ -1,0 +1,21 @@
+{
+  "component_header": {
+    "number": "S_1",
+    "name": "header"
+  },
+
+  "component_footer": {
+    "number": "S_1",
+    "name": "footer"
+  },
+
+  "component_banner": {
+    "number": "S_1",
+    "name": "banner"
+  },
+
+  "component_grid": {
+    "number": "S_1",
+    "name": "grid"
+  }
+}

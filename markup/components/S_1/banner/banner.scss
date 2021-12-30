@@ -1,0 +1,105 @@
+.banner {
+    &__wrap {
+        padding: 25px 0;
+        background: url("/static/img/content/banner-bg.jpg");
+        background-size: cover;
+        background-position: bottom;
+
+    }
+
+    &__text-wrap {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__text {
+        width: 100%;
+        max-width: 620px;
+    }
+
+    &__image-text-title {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    &__text-img {
+        img {
+            display: inline-block;
+            min-width: 100%;
+
+            @include support(object-fit, cover) {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    @include respond-from(xs) {
+
+        &__text-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__text {
+            margin-top: 50px;
+        }
+    }
+
+    @include respond-from(sm) {
+        &__wrap {
+            padding: 50px 0;
+            min-height: 400px;
+        }
+
+    }
+
+    @include respond-from(md) {
+        &__wrap {
+            padding: 50px 0;
+        }
+
+        &__text-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+
+        &__image-text-title {
+            font-size: 48px;
+        }
+
+        &__text-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    @include respond-from(lg) {
+        &__wrap {
+            padding: 0;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        &__text-wrap {
+            align-items: flex-start;
+        }
+
+        &__text {
+            margin: 0;
+
+            h1 {
+                margin-top: 0;
+            }
+        }
+
+        &__image-text-title {
+            font-size: 60px;
+        }
+    }
+}
