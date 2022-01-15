@@ -14,6 +14,11 @@
     "name": "banner"
   },
 
+  "component_form": {
+    "number": "S_1",
+    "name": "form"
+  },
+
   "component_grid": {
     "number": "S_1",
     "name": "grid"

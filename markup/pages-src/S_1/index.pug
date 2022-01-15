@@ -2,7 +2,7 @@ extends _page-template
 
 block content
     | <!-- skin 1 -->
-
+    +header
     .w-inner
         +banner
         .w-center
@@ -11,10 +11,14 @@ block content
                 .img-right-text
                     .img-right-text__wrapper
                         .img-right-text__text-wrap
-                            h1.banner__image-text-title.colored О нас
-                            .img-right-text__text Компания <span class="colored">Aquatel Inc</span> – специализированный дистрибьютор аудиовизуальных технологий и профессиональных решений видеоконференцсвязи. Наша команда совместно с заказчиком разрабатываем техническое решение проекта. Осуществляем прямую поставку оборудования и полное сопровождение реализации проекта.
+                            h1.banner__image-text-title.colored About us
+                            .img-right-text__text.image-text-subtitle Aquatel Inc is positioning itself as a Value Added Reseller for the well known international <telecommunication brands>.
                             .w-gap
-                            .img-right-text__text <span class="colored">Aquatel Inc</span> является поставщиком более 10 ведущих производителей решений видеоконференцсвязи и медиа-оборудования. Среди которых: AMC, Albiral, Audiocodes, Avaya, Axtel, ClearOne, Siemon, Mitel, Poly и другие.
+                            .img-right-text__text.image-text-subtitle Having its customer network in Eastern Europe, Baltic's and Transcaucasia States company committed to deliver leading edge telecommunication and audiovisual solutions to its customers.
+                            .w-gap
+                            .img-right-text__text.image-text-subtitle.banner__image-text-subtitle The product portfolio offered is often used at biggest corporations of Fortune 500 list as well as many state established entities over the world, world wide hotel networks, financial and energy related industries.
+                            .w-gap
+                            .img-right-text__text.image-text-subtitle Aquatel Inc is a strong international partner, grown in house secure corporate solutions expertise for videconfrencing, VOIP, cabling etc. We do believe communication is building a future of our rapidly changing world.
             .w-gap-lg
                 #vendors
                 +grid
@@ -26,6 +30,16 @@ block content
                         .img-left-text__wrapper
                             .img-left-text__text-wrap
                                 .img-left-text__text Видеоконференция и медиаоборудование – профильные технологии <span class="colored">Aquatel Inc</span>. В нашем портфолио проекты разного масштаба: от небольших помещений до крупных офисов. Выбирая нас, вы выбираете немецкое качество, оборудование для видеоконференций от ведущих брендов и сервис европейского класса, которому уже доверяют в многих странах мира.
-
             .w-gap-lg
                 #contacts
+            .w-gap-lg
+                .txt-wrap
+                    .img-left-text
+                        .img-left-text__img.w-column
+                            h3 Contact us
+                            a(href="mailto:info@miksartis.lt") Email: info@miksartis.lt
+                            a(href="tel:+37052059820") Tel: +37052059820
+                        .img-left-text__wrapper.m-w
+                            .img-left-text__text-wrap.m-w
+                                .img-left-text__text
+                                    +form

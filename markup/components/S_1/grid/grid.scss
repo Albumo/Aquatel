@@ -2,37 +2,37 @@
     &__list {
         @extend %ul-reset;
         display: flex;
-        flex-flow: row wrap;
         gap: 1rem;
+        flex-flow: row wrap;
     }
 
 
 
     &__list-text {
         position: absolute;
-        background: rgba(35, 35, 35, 0.72);
+        right: 0;
         bottom: -100%;
         left: 0;
-        right: 0;
         padding: 10px;
+        background: rgba(35, 35, 35, .72);
         transition: bottom .25s ease-in-out;
     }
 
     a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 100%;
         min-height: 260px;
         padding: 3rem .8rem;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.2rem;
-        background: #232323;
-        color: #ffffff;
-        transition: all .35s ease-in-out;
-        position: relative;
         overflow: hidden;
+        background: #232323;
+        font-size: 1.2rem;
+        color: #fff;
+        text-align: center;
         text-decoration: none;
+        transition: all .35s ease-in-out;
 
         img {
             width: unset;
@@ -62,7 +62,7 @@
 
     @include respond-from(lg) {
         &__list {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 
