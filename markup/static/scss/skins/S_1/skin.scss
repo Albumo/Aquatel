@@ -223,8 +223,8 @@ img {
 
 .w-list {
     display: flex;
-    flex-flow: row wrap;
     gap: 1rem;
+    flex-flow: row wrap;
 
     ul li {
         margin-bottom: 5px;
@@ -237,8 +237,8 @@ img {
 
 .m-w {
     width: 100%;
-    margin: 0 auto;
     max-width: 480px;
+    margin: 0 auto;
 }
 
 .btn {
@@ -275,5 +275,22 @@ img {
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+.msg-wrap {
+    position: fixed;
+    bottom: 0;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 64px;
+    z-index: 9999;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+
+    .msg {
+        padding: 20px;
+        transform: translate(0px, 0px) !important;
     }
 }
