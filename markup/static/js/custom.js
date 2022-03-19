@@ -11,7 +11,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var height = $(window).scrollTop();
 
-        if (height > 50) {
+        if (height > 80) {
             $('.js-header').addClass('is-scroll');
         } else {
             $('.js-header').removeClass('is-scroll');
@@ -62,7 +62,7 @@ var gsapMsg = gsap.to('.msg', 0.25, {
 var arrInput = document.querySelectorAll('.aInput');
 
 function send(event, php) {
-    event.preventDefault ? event.preventDefault() : event.returnValue = false;
+    // event.preventDefault ? event.preventDefault() : event.returnValue = false;
     for (var i = 0, count = arrInput.length; i < count; i++) {
         arrInput[i].classList.remove('inputerror');
     }

@@ -1,10 +1,14 @@
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background-color: $primary-fill;
     font-weight: $font-weight;
     color: $primary-text;
 }
 
 html {
+    height: 100%;
     @include respond-from(to-sm) {
         font-size: $font-size-xs;
     }
@@ -113,6 +117,10 @@ p {
     @include respond-from(md) {
         margin-top: 100px;
     }
+}
+
+.cl-w-outer {
+    flex: 1 0 auto;
 }
 
 .w-gap-xl {
